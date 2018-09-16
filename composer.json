@@ -1,0 +1,39 @@
+{
+    "name": "gregoriohc/laravel-nova-theme-responsive",
+    "description": "A Laravel Nova responsive theme.",
+    "type": "library",
+    "homepage": "https://github.com/gregoriohc/laravel-artifacts",
+    "authors": [
+        {
+            "name": "Gregorio Hernández Caso",
+            "email": "gregoriohc@gmail.com",
+            "homepage": "https://github.com/gregoriohc",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gregoriohc\\LaravelNovaThemeResponsive\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gregoriohc\\LaravelNovaThemeResponsive\\ThemeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

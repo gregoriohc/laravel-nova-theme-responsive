@@ -1,0 +1,96 @@
+.hamburger-menu {
+    padding-left: 1.25em;
+    position: relative;
+    height: 19px;
+    margin-right: 6px;
+    display: none;
+}
+
+.hamburger-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.21em;
+    bottom: 0.21em;
+    width: 1em;
+    background: linear-gradient(
+            to bottom,
+            black, black 20%,
+            white 20%, white 40%,
+            black 40%, black 60%,
+            white 60%, white 80%,
+            black 80%, black 100%
+    );
+}
+
+@media (max-width: 992px) {
+    .min-w-site {
+        min-width: auto;
+    }
+
+    .w-sidebar {
+        position: absolute;
+        z-index: 1000;
+        margin-top: 3.75rem;
+    }
+
+    .sidebar-hidden {
+        display: none;
+    }
+
+    .pt-header {
+        padding-top: 1.75rem;
+    }
+
+    .bg-logo {
+        display: none;
+    }
+
+    .content {
+        min-width: auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    .pl-search {
+        width: 70%;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .btn {
+        white-space: nowrap;
+    }
+
+    .px-view {
+        padding-left: 1.125rem;
+        padding-right: 1.125rem;
+    }
+
+    .py-view {
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+    }
+
+    form .w-1\/2 {
+        width: 80%;
+    }
+
+    form .w-1\/2 > div.flex {
+        display: block;
+    }
+
+    form > .flex {
+        display: block;
+    }
+
+    form > .flex > button {
+        margin-bottom: 10px;
+    }
+
+    .content .flex-wrap > .w-1\/3, .content .flex-wrap > .w-2\/3 {
+        width: 100%;
+    }
+}
