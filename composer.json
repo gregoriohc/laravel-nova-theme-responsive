@@ -2,7 +2,7 @@
     "name": "gregoriohc/laravel-nova-theme-responsive",
     "description": "A Laravel Nova responsive theme.",
     "type": "library",
-    "homepage": "https://github.com/gregoriohc/laravel-artifacts",
+    "homepage": "https://github.com/gregoriohc/laravel-nova-theme-responsive",
     "authors": [
         {
             "name": "Gregorio Hernández Caso",
