@@ -16,8 +16,7 @@ composer require gregoriohc/laravel-nova-theme-responsive
 ```
 
 ## Screenshots
-![screenshot-index](https://user-images.githubusercontent.com/566841/45611999-ca188a00-ba61-11e8-803e-5d96fef0a74e.png) ![screenshot-sidebar](https://user-images.githubusercontent.com/566841/45612025-def51d80-ba61-11e8-8426-73c4d5456b7c.png)
-![screenshot-detail](https://user-images.githubusercontent.com/566841/45612034-ec120c80-ba61-11e8-960f-87034a29c11c.png) ![screenshot-form](https://user-images.githubusercontent.com/566841/45612051-f92efb80-ba61-11e8-9032-5945806e4a6b.png)
+<img src="https://user-images.githubusercontent.com/566841/45611999-ca188a00-ba61-11e8-803e-5d96fef0a74e.png" width="210" /> <img src="https://user-images.githubusercontent.com/566841/45612025-def51d80-ba61-11e8-8426-73c4d5456b7c.png" width="210" /> <img src="https://user-images.githubusercontent.com/566841/45612034-ec120c80-ba61-11e8-960f-87034a29c11c.png" width="210" /> <img src="https://user-images.githubusercontent.com/566841/45612051-f92efb80-ba61-11e8-9032-5945806e4a6b.png" width="210" />
 
 ## Credits
 
