@@ -54,14 +54,31 @@
     /* Header */
     .hamburger-menu {
         display: block;
+        margin-right: 1rem;
     }
 
     .bg-logo {
         display: none;
     }
 
-    .pl-search {
-        width: 70%;
+    .h-header .dropdown-trigger {
+        margin-right: -20px;
+    }
+
+    .h-header .dropdown-trigger span, .h-header .dropdown-trigger svg {
+        display: none;
+    }
+
+    .h-header .dropdown-trigger img.mr-3 {
+        margin-right: 0;
+    }
+
+    .h-header a.no-underline {
+        display: none;
+    }
+
+    .h-header .pl-search {
+        width: 85%;
     }
 
     /* Content */
@@ -73,6 +90,10 @@
     .content .py-view {
         padding-top: 1.125rem;
         padding-bottom: 1.125rem;
+    }
+
+    .content div[dusk='users-index-component'] .pl-search {
+        width: auto;
     }
 
     /* Forms */
@@ -97,8 +118,26 @@
         width: 100%;
     }
 
+    .content .card table td.w-1\/2 {
+        display: table-row;
+    }
+
     /* Other */
     .btn {
         white-space: nowrap;
+    }
+
+    .btn[dusk='create-button'] {
+        font-weight: bolder;
+        font-size: 26px;
+        padding: 0 12px;
+        width: 39px;
+        overflow: hidden;
+    }
+
+    .btn[dusk='create-button']::before {
+        content: "+";
+        position: relative;
+        margin-right: 20px;
     }
 }
