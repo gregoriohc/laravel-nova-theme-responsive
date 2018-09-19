@@ -127,7 +127,7 @@
         white-space: nowrap;
     }
 
-    .btn[dusk='create-button'] {
+    .flex.justify-between span .btn[dusk='create-button'] {
         font-weight: bolder;
         font-size: 26px;
         padding: 0 12px;
@@ -135,7 +135,7 @@
         overflow: hidden;
     }
 
-    .btn[dusk='create-button']::before {
+    .flex.justify-between span .btn[dusk='create-button']::before {
         content: "+";
         position: relative;
         margin-right: 20px;
