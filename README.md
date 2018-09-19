@@ -17,13 +17,13 @@ composer require gregoriohc/laravel-nova-theme-responsive
 
 ## Screenshots
 
-Dashboard | Index | Detail
+Dashboard | Menu | Index
 ------------ | ------------- | -------------
-![nova-responsive-dashboard-view](https://user-images.githubusercontent.com/29180903/45772680-5ff51600-bc16-11e8-85c8-da33d9a6fea5.png) | ![nova-responsive-index-view](https://user-images.githubusercontent.com/29180903/45772683-608dac80-bc16-11e8-9266-404617968c3f.png) | ![nova-responsive-detail-view](https://user-images.githubusercontent.com/29180903/45772677-5ff51600-bc16-11e8-90e9-17e6025f8998.png)
+![nova-responsive-dashboard-view](https://user-images.githubusercontent.com/29180903/45772680-5ff51600-bc16-11e8-85c8-da33d9a6fea5.png) | ![nova-responsive-index-menu-view](https://user-images.githubusercontent.com/29180903/45772682-608dac80-bc16-11e8-9b15-b69131c2f02a.png) | ![nova-responsive-index-view](https://user-images.githubusercontent.com/29180903/45772683-608dac80-bc16-11e8-9266-404617968c3f.png)
 
-Menu | Create | Delete
+Detail | Create | Delete
 ------------ | ------------- | -------------
-![nova-responsive-index-menu-view](https://user-images.githubusercontent.com/29180903/45772682-608dac80-bc16-11e8-9b15-b69131c2f02a.png) | ![nova-responsive-create-view](https://user-images.githubusercontent.com/29180903/45772681-5ff51600-bc16-11e8-84c9-c0f61890bfed.png)|  ![nova-responsive-delete-view](https://user-images.githubusercontent.com/29180903/45772679-5ff51600-bc16-11e8-93d5-cd2a88b7e54a.png)
+ ![nova-responsive-detail-view](https://user-images.githubusercontent.com/29180903/45772677-5ff51600-bc16-11e8-90e9-17e6025f8998.png) | ![nova-responsive-create-view](https://user-images.githubusercontent.com/29180903/45772681-5ff51600-bc16-11e8-84c9-c0f61890bfed.png)|  ![nova-responsive-delete-view](https://user-images.githubusercontent.com/29180903/45772679-5ff51600-bc16-11e8-93d5-cd2a88b7e54a.png)
 
 
 ## Credits
