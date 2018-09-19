@@ -140,4 +140,8 @@
         position: relative;
         margin-right: 20px;
     }
+
+    .modal form {
+        width: 100% !important;
+    }
 }
