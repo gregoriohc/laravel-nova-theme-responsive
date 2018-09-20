@@ -73,7 +73,7 @@
         margin-right: 0;
     }
 
-    .h-header a.no-underline {
+    span.hamburger-menu + a {
         display: none;
     }
 
