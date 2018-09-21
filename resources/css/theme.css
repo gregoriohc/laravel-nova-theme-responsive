@@ -144,4 +144,22 @@
     .modal form {
         width: 100% !important;
     }
+
+    select[dusk=action-select] {
+        margin-left: -1rem;
+    }
+
+    div[dusk=filter-selector] {
+        margin-left: -0.3rem;
+    }
+
+    div[dusk=delete-menu] > div {
+        margin-left: 0.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    select[dusk=action-select] {
+        width: 5.6rem;
+    }
 }
