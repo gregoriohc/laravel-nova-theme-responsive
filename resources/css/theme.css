@@ -92,10 +92,6 @@
         padding-bottom: 1.125rem;
     }
 
-    .content div[dusk='users-index-component'] .pl-search {
-        width: auto;
-    }
-
     /* Forms */
     form .w-1\/2 {
         width: 80%;
@@ -113,6 +109,33 @@
         margin-bottom: 10px;
     }
 
+    .card > form > div > .flex {
+        display: block;
+    }
+    .card > form > div > .flex > .w-1\/5,
+    .card > form > div > .flex > .w-1\/2,
+    .card > form > div > .flex > .w-4\/5 {
+        width: 100%;
+        display: block;
+    }
+
+    .card > form > div > .flex > .py-6 {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .card > form > div > .flex > .py-6 + .py-6 {
+        padding-bottom: 1rem;
+    }
+
+    trix-toolbar .trix-button-row {
+        display: inline-block !important;
+    }
+
+    trix-toolbar .trix-button-group {
+        float: left !important;
+    }
+
     /* Cards */
     .content .flex-wrap > .w-1\/3, .content .flex-wrap > .w-2\/3 {
         width: 100%;
@@ -127,7 +150,11 @@
         white-space: nowrap;
     }
 
-    .flex.justify-between span .btn[dusk='create-button'] {
+    div[dusk$='index-component'] .pl-search {
+        width: auto;
+    }
+
+    div[dusk$='index-component'] .btn[dusk='create-button'] {
         font-weight: bolder;
         font-size: 26px;
         padding: 0 12px;
@@ -135,7 +162,7 @@
         overflow: hidden;
     }
 
-    .flex.justify-between span .btn[dusk='create-button']::before {
+    div[dusk$='index-component'] .btn[dusk='create-button']::before {
         content: "+";
         position: relative;
         margin-right: 20px;
