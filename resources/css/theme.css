@@ -54,6 +54,13 @@
     }
 
     /* Header */
+    .h-header {
+        z-index: 1000;
+        position: fixed;
+        width: 100%;
+        margin-top: -3.75rem;
+    }
+
     .hamburger-menu {
         display: block;
         margin-right: 1rem;
@@ -84,6 +91,10 @@
     }
 
     /* Content */
+    .content {
+        padding-top: 3.75rem;
+    }
+
     .content .px-view {
         padding-left: 1.125rem;
         padding-right: 1.125rem;
