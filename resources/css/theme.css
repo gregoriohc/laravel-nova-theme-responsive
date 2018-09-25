@@ -141,6 +141,26 @@
         padding-bottom: 1rem;
     }
 
+    .card > form > div header.flex {
+        display: block;
+    }
+
+    .card > form > div header.flex ul:first-child {
+        border-bottom: 1px solid var(--60);
+    }
+
+    .card > form > div header.flex ul:nth-child(2) button:first-child {
+        border-left: none;
+    }
+
+    .card > form > div header.flex ul:nth-child(2) button:last-child {
+        border-right: 1px solid var(--60);
+    }
+
+    .card > form > div div.pin {
+        z-index: 2000;
+    }
+
     trix-toolbar .trix-button-row {
         display: inline-block !important;
     }
