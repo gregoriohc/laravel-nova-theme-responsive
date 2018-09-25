@@ -41,6 +41,8 @@
         position: absolute;
         z-index: 1000;
         margin-top: 3.75rem;
+        height: 100%;
+        overflow: auto;
     }
 
     .w-sidebar.pt-header {
