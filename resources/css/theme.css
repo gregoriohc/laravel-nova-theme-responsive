@@ -38,9 +38,9 @@
 @media (max-width: 992px) {
     /* Sidebar */
     .w-sidebar {
-        position: absolute;
+        position: fixed;
+        padding-top: 5.5rem !important;
         z-index: 1000;
-        margin-top: 3.75rem;
         height: 100%;
         overflow: auto;
     }
@@ -205,20 +205,49 @@
         width: 100% !important;
     }
 
-    select[dusk=action-select] {
-        margin-left: -1rem;
+    div[dusk$='index-component'] > div.card > div.py-3.flex.items-center.border-b.border-50 {
+        padding-bottom: 0.35rem;
     }
 
-    div[dusk=filter-selector] {
-        margin-left: -0.3rem;
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 {
+        display: block;
     }
 
-    div[dusk=delete-menu] > div {
-        margin-left: 0.4rem;
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > h4 {
+        position: absolute;
+    }
+
+    div[dusk$='index-component'] > div.card > div.py-3.flex.items-center.border-b.border-50 > div.flex.items-center.ml-auto.px-3,
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center {
+        display: inline-block;
+    }
+
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center {
+        display: inline-block;
+        padding-top: 1.5rem
+    }
+
+    div[dusk$='index-component'] > div.card > div.py-3.flex.items-center.border-b.border-50 > div.flex.items-center.ml-auto.px-3 > div,
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > div,
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > button,
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > a {
+        display: inline-flex;
+        vertical-align: top;
+        margin-bottom: 0.4rem;
+    }
+
+    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > div.ml-3 {
+        margin-left: 0;
     }
 }
 
 @media (max-width: 500px) {
+    select[dusk=action-select] {
+        width: 8.9rem;
+    }
+}
+
+@media (max-width: 310px) {
     select[dusk=action-select] {
         width: 5.6rem;
     }
