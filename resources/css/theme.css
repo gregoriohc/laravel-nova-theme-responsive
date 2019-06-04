@@ -1,15 +1,20 @@
 .hamburger-menu {
-    padding-left: 1.25em;
     position: relative;
     height: 19px;
-    margin-right: 9px;
     display: none;
+}
+html:not([dir="rtl"]) .hamburger-menu {
+    padding-left: 1.25em;
+    margin-right: 9px;
+}
+html[dir="rtl"] .hamburger-menu {
+    padding-right: 1.25em;
+    margin-left: 9px;
 }
 
 .hamburger-menu:before {
     content: "";
     position: absolute;
-    left: 0;
     top: 0.21em;
     bottom: 0.21em;
     width: 1em;
@@ -21,6 +26,12 @@
             white 60%, white 80%,
             black 80%, black 100%
     );
+}
+html:not([dir="rtl"]) .hamburger-menu:before {
+    left: 0;
+}
+html[dir="rtl"] .hamburger-menu:before {
+    right: 0;
 }
 
 @media (max-width: 80rem) {
@@ -63,24 +74,36 @@
 
     .hamburger-menu {
         display: block;
+    }
+    html:not([dir="rtl"]) .hamburger-menu {
         margin-right: 1rem;
+    }
+    html[dir="rtl"] .hamburger-menu {
+        margin-left: 1rem;
     }
 
     .bg-logo {
         display: none;
     }
 
-    .h-header .dropdown-trigger {
+    html:not([dir="rtl"]) .h-header .dropdown-trigger {
         margin-right: -20px;
+    }
+    html[dir="rtl"] .h-header .dropdown-trigger {
+        margin-left: -20px;
     }
 
     .h-header .dropdown-trigger span, .h-header .dropdown-trigger svg {
         display: none;
     }
 
-    .h-header .dropdown-trigger img.mr-3 {
+    html:not([dir="rtl"]) .h-header .dropdown-trigger img.mr-3 {
         margin-right: 0;
     }
+    html[dir="rtl"] .h-header .dropdown-trigger img.mr-3 {
+        margin-left: 0;
+    }
+
 
     span.hamburger-menu + a {
         display: none;
@@ -149,12 +172,18 @@
         border-bottom: 1px solid var(--60);
     }
 
-    .card > form > div header.flex ul:nth-child(2) button:first-child {
+    html:not([dir="rtl"]) .card > form > div header.flex ul:nth-child(2) button:first-child {
         border-left: none;
     }
+    html[dir="rtl"] .card > form > div header.flex ul:nth-child(2) button:first-child {
+        border-right: none;
+    }
 
-    .card > form > div header.flex ul:nth-child(2) button:last-child {
+    html:not([dir="rtl"]) .card > form > div header.flex ul:nth-child(2) button:last-child {
         border-right: 1px solid var(--60);
+    }
+    html[dir="rtl"] .card > form > div header.flex ul:nth-child(2) button:last-child {
+        border-left: 1px solid var(--60);
     }
 
     .card > form > div div.pin {
@@ -165,8 +194,11 @@
         display: inline-block !important;
     }
 
-    trix-toolbar .trix-button-group {
+    html:not([dir="rtl"]) trix-toolbar .trix-button-group {
         float: left !important;
+    }
+    html[dir="rtl"] trix-toolbar .trix-button-group {
+        float: right !important;
     }
 
     /* Cards */
@@ -198,7 +230,12 @@
     div[dusk$='index-component'] .btn[dusk='create-button']::before {
         content: "+";
         position: relative;
+    }
+    html:not([dir="rtl"]) div[dusk$='index-component'] .btn[dusk='create-button']::before {
         margin-right: 20px;
+    }
+    html[dir="rtl"] div[dusk$='index-component'] .btn[dusk='create-button']::before {
+        margin-left: 20px;
     }
 
     .modal form {
@@ -236,8 +273,11 @@
         margin-bottom: 0.4rem;
     }
 
-    div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > div.ml-3 {
+    html:not([dir="rtl"]) div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > div.ml-3 {
         margin-left: 0;
+    }
+    html[dir="rtl"] div[dusk$='detail-component'] > div > div.flex.items-center.mb-3 > div.ml-3.w-full.flex.items-center > div.ml-3 {
+        margin-right: 0;
     }
 }
 
