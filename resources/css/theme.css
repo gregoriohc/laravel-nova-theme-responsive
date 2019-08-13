@@ -145,23 +145,25 @@ html[dir="rtl"] .hamburger-menu:before {
         margin-bottom: 10px;
     }
 
-    .card > form > div > .flex {
+    .content form .card > .flex,
+    div[dusk$='detail-component'] .card > .flex{
         display: block;
     }
-    .card > form > div > .flex > .w-1\/5,
-    .card > form > div > .flex > .w-1\/2,
-    .card > form > div > .flex > .w-4\/5 {
+    .content form .card > .flex > div,
+    div[dusk$='detail-component'] .card > .flex {
         width: 100%;
         display: block;
     }
 
-    .card > form > div > .flex > .py-6 {
-        padding-top: 1rem;
+    .content form .card > .flex > .py-6,
+    div[dusk$='detail-component'] .card > .flex > .py-4 {
+        padding-top: .5rem;
         padding-bottom: 0;
     }
 
-    .card > form > div > .flex > .py-6 + .py-6 {
-        padding-bottom: 1rem;
+    .content form .card > .flex > .py-6 + .py-6,
+    div[dusk$='detail-component'] .card > .flex > .py-4 + .py-4 {
+        padding-bottom: .5rem;
     }
 
     .card > form > div header.flex {
