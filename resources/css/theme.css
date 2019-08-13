@@ -150,9 +150,8 @@ html[dir="rtl"] .hamburger-menu:before {
         display: block;
     }
     .content form .card > .flex > div,
-    div[dusk$='detail-component'] .card > .flex {
+    div[dusk$='detail-component'] .card > .flex > div {
         width: 100%;
-        display: block;
     }
 
     .content form .card > .flex > .py-6,
