@@ -202,7 +202,17 @@ html[dir="rtl"] .hamburger-menu:before {
     }
 
     /* Cards */
-    .content .flex-wrap > .w-1\/3, .content .flex-wrap > .w-2\/3 {
+    .content .flex-wrap > .w-1\/2,
+    .content .flex-wrap > .w-1\/3,
+    .content .flex-wrap > .w-1\/4,
+    .content .flex-wrap > .w-1\/5,
+    .content .flex-wrap > .w-1\/6,
+    .content .flex-wrap > .w-2\/3,
+    .content .flex-wrap > .w-2\/5,
+    .content .flex-wrap > .w-3\/4,
+    .content .flex-wrap > .w-3\/5,
+    .content .flex-wrap > .w-4\/5,
+    .content .flex-wrap > .w-5\/6 {
         width: 100%;
     }
 
@@ -219,7 +229,8 @@ html[dir="rtl"] .hamburger-menu:before {
         width: auto;
     }
 
-    div[dusk$='index-component'] .btn[dusk='create-button'] {
+    div[dusk$='index-component'] .btn[dusk='create-button'],
+    div[dusk$='index-component'] .btn[dusk='attach-button'] {
         font-weight: bolder;
         font-size: 26px;
         padding: 0 12px;
@@ -227,13 +238,16 @@ html[dir="rtl"] .hamburger-menu:before {
         overflow: hidden;
     }
 
-    div[dusk$='index-component'] .btn[dusk='create-button']::before {
+    div[dusk$='index-component'] .btn[dusk='create-button']::before,
+    div[dusk$='index-component'] .btn[dusk='attach-button']::before {
         content: "+";
         position: relative;
     }
-    html:not([dir="rtl"]) div[dusk$='index-component'] .btn[dusk='create-button']::before {
+    html:not([dir="rtl"]) div[dusk$='index-component'] .btn[dusk='create-button']::before,
+    html:not([dir="rtl"]) div[dusk$='index-component'] .btn[dusk='attach-button']::before {
         margin-right: 20px;
     }
+    html[dir="rtl"] div[dusk$='index-component'] .btn[dusk='attach-button']::before,
     html[dir="rtl"] div[dusk$='index-component'] .btn[dusk='create-button']::before {
         margin-left: 20px;
     }
