@@ -1,4 +1,5 @@
 .hamburger-menu {
+    cursor: pointer;
     position: relative;
     height: 19px;
     display: none;
@@ -42,7 +43,6 @@ html[dir="rtl"] .hamburger-menu:before {
     .content {
         min-width: auto;
         width: 100%;
-        max-width: none;
     }
 }
 
@@ -116,6 +116,7 @@ html[dir="rtl"] .hamburger-menu:before {
     /* Content */
     .content {
         padding-top: 3.75rem;
+        max-width: none;
     }
 
     .content .px-view {
@@ -158,6 +159,11 @@ html[dir="rtl"] .hamburger-menu:before {
     div[dusk$='detail-component'] .card > .flex > .py-4 {
         padding-top: .5rem;
         padding-bottom: 0;
+    }
+
+    .content form .card > .flex > .py-6,
+    div[dusk$='detail-component'] .card > .flex.bg-20 > .py-4 {
+        padding-bottom: .5rem;
     }
 
     .content form .card > .flex > .py-6 + .py-6,
@@ -251,6 +257,10 @@ html[dir="rtl"] .hamburger-menu:before {
     html[dir="rtl"] div[dusk$='index-component'] .btn[dusk='attach-button']::before,
     html[dir="rtl"] div[dusk$='index-component'] .btn[dusk='create-button']::before {
         margin-left: 20px;
+    }
+
+    .modal {
+        top: auto;
     }
 
     .modal form {
