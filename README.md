@@ -15,6 +15,14 @@ You can install the nova theme into a Laravel app that uses [Nova](https://nova.
 composer require gregoriohc/laravel-nova-theme-responsive
 ```
 
+This theme include some config based options. To use them, first publish the config file:
+
+```bash
+php artisan vendor:publish --provider="Gregoriohc\LaravelNovaThemeResponsive\ThemeServiceProvider"
+```
+
+And then you can configure the options editing the `config/nova-theme-responsive.php` file.
+
 ## Screenshots
 
 Dashboard | Menu | Index

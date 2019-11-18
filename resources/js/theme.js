@@ -39,6 +39,51 @@ function load() {
       }
     });
   });
+
+  // Config based theme tweaking
+  if (Nova.config.ntr) {
+    // Hide sidebar headlines
+    var sidebarHeadlines = document.querySelectorAll('.w-sidebar h4');
+    sidebarHeadlines.forEach(function(sidebarHeadline) {
+      if (Nova.config.ntr.hide_all_sidebar_headlines
+        || Nova.config.ntr.hidden_sidebar_headlines.indexOf(sidebarHeadline.textContent) !== -1) {
+        sidebarHeadline.classList.add("hidden");
+      }
+    });
+
+    // Sticky resource table actions
+    if (Nova.config.ntr.resource_tables_sticky_actions) {
+      var contents = document.querySelectorAll('.content');
+      contents.forEach(function(content) {
+        content.classList.add("sticky-actions");
+      });
+    }
+    if (Nova.config.ntr.resource_tables_sticky_actions_on_mobile) {
+      var contents = document.querySelectorAll('.content');
+      contents.forEach(function(content) {
+        content.classList.add("sticky-actions-on-mobile");
+      });
+    }
+
+    // Hide "Update & Continue Editing" button
+    if (Nova.config.ntr.hide_update_and_continue_editing_button) {
+      var contents = document.querySelectorAll('.content');
+      contents.forEach(function(content) {
+        content.classList.add("hide-update-and-continue-editing-button");
+      });
+    }
+    if (Nova.config.ntr.hide_update_and_continue_editing_button_on_mobile) {
+      var contents = document.querySelectorAll('.content');
+      contents.forEach(function(content) {
+        content.classList.add("hide-update-and-continue-editing-button-on-mobile");
+      });
+    }
+
+    // Fixed sidebar on desktop
+    if (Nova.config.ntr.fixed_sidebar) {
+      document.querySelector('body').classList.add("fixed-sidebar");
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", load, false);

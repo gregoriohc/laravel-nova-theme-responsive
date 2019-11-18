@@ -35,6 +35,47 @@ html[dir="rtl"] .hamburger-menu:before {
     right: 0;
 }
 
+.content.hide-update-and-continue-editing-button button[dusk$='update-and-continue-editing-button'] {
+    display: none;
+}
+
+/* Resource tables */
+.content.sticky-actions .card table.w-full tbody tr td:last-child, .content.sticky-actions .card table.w-full thead tr th:last-child {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    right: 0;
+}
+
+.content.sticky-actions .card table.w-full tbody tr td:last-child {
+    background: white;
+}
+
+.content.sticky-actions .card table.w-full tbody tr td:last-child:before {
+    content: '';
+    height: 100%;
+    top: 0;
+    margin-left: -.75rem;
+    position: absolute;
+    border-left: 1px solid #eee;
+}
+
+@media (min-width: 992px) {
+    body.fixed-sidebar .bg-grad-sidebar {
+        position: fixed;
+        padding-top: 5.5rem !important;
+        overflow: auto;
+        height: 100%;
+    }
+
+    body.fixed-sidebar .content {
+        padding-left: 13.75rem;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 80rem) {
     .min-w-site {
         min-width: auto;
@@ -43,6 +84,29 @@ html[dir="rtl"] .hamburger-menu:before {
     .content {
         min-width: auto;
         width: 100%;
+    }
+
+    /* Resource tables */
+    .content.sticky-actions-on-mobile .card table.w-full tbody tr td:last-child, .content.sticky-actions-on-mobile .card table.w-full thead tr th:last-child {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        right: 0;
+    }
+
+    .content.sticky-actions-on-mobile .card table.w-full tbody tr td:last-child {
+        background: white;
+    }
+
+    .content.sticky-actions-on-mobile .card table.w-full tbody tr td:last-child:before {
+        content: '';
+        height: 100%;
+        top: 0;
+        margin-left: -.75rem;
+        position: absolute;
+        border-left: 1px solid #eee;
     }
 }
 
@@ -144,6 +208,10 @@ html[dir="rtl"] .hamburger-menu:before {
 
     form > .flex > button {
         margin-bottom: 10px;
+    }
+
+    .content.hide-update-and-continue-editing-button-on-mobile button[dusk$='update-and-continue-editing-button'] {
+        display: none;
     }
 
     .content form .card > .flex,
