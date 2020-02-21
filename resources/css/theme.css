@@ -147,7 +147,7 @@ html[dir="rtl"] .hamburger-menu:before {
     }
 
     .bg-logo {
-        display: none;
+        display: none !important;
     }
 
     html:not([dir="rtl"]) .h-header .dropdown-trigger {
