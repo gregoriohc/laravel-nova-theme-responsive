@@ -385,3 +385,21 @@ html[dir="rtl"] .hamburger-menu:before {
         width: 5.6rem;
     }
 }
+
+@media (max-height: 610px) {
+    .z-50.open .scroll-wrap {
+        max-height: 270px !important;
+    }
+}
+
+@media (max-height: 540px) {
+    .z-50.open .scroll-wrap {
+        max-height: 180px !important;
+    }
+}
+
+@media (max-height: 440px) {
+    .z-50.open .scroll-wrap {
+        max-height: 110px !important;
+    }
+}
