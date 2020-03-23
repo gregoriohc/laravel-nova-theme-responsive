@@ -38,6 +38,12 @@ Detail | Create | Delete
 
 - [Gregorio Hernández Caso](https://github.com/gregoriohc)
 
+## Support the development
+**Do you like this project? Support it by donating**
+
+- PayPal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=GM9RYQ4R22LKG&currency_code=EUR&source=url)
+- Patreon: [Donate](https://www.patreon.com/gregoriohc)
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
