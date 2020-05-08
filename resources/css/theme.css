@@ -199,7 +199,8 @@ html[dir="rtl"] .hamburger-menu:before {
     }
 
     form .w-1\/2 > div.flex {
-        display: block;
+       display: flex;
+       flex-wrap: nowrap;
     }
 
     form > .flex {
