@@ -403,3 +403,12 @@ html[dir="rtl"] .hamburger-menu:before {
         max-height: 110px !important;
     }
 }
+
+/**
+ * Modals
+ */
+@media (max-width: 975px) {
+    .modal > div > div > div {
+        width: 90vw !important;
+    }
+}
