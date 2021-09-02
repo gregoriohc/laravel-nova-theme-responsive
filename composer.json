@@ -1,5 +1,6 @@
 {
     "name": "gregoriohc/laravel-nova-theme-responsive",
+    "version": "v0.8.1",
     "description": "A Laravel Nova responsive theme.",
     "type": "library",
     "homepage": "https://github.com/gregoriohc/laravel-nova-theme-responsive",
