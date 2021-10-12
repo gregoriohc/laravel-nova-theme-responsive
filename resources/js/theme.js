@@ -20,7 +20,7 @@ function load() {
     var sidebar = document.querySelector('.w-sidebar');
     sidebar.classList.toggle("sidebar-hidden");
 
-    if (Nova.config.ntr.desktop_collapsible_sidebar) {
+    if (Nova.config.ntr.desktop_collapsible_sidebar && window.innerWidth > 992) {
       sidebar.classList.toggle("hidden");
     }
   }, true);
@@ -90,7 +90,7 @@ function load() {
     }
 
     //Collapsible sidebar fpr desktop
-    if (Nova.config.ntr.desktop_collapsible_sidebar) {
+    if (Nova.config.ntr.desktop_collapsible_sidebar && window.innerWidth > 992) {
       document.querySelector('.hamburger-menu').style.display = "block";
 
       var content = document.querySelector('.content');
