@@ -5,7 +5,8 @@ function load() {
 
   // Add hidden class to sidebar
   var sidebar = document.querySelector('.w-sidebar');
-  sidebar.classList.add("sidebar-hidden");
+  if(window.innerWidth < 992)
+    sidebar.classList.add("sidebar-hidden");
 
   // Add hamburger menu to header
   var hamburger = document.createElement("span");
@@ -18,6 +19,10 @@ function load() {
     e.stopPropagation();
     var sidebar = document.querySelector('.w-sidebar');
     sidebar.classList.toggle("sidebar-hidden");
+
+    if (Nova.config.ntr.desktop_collapsible_sidebar) {
+      sidebar.classList.toggle("hidden");
+    }
   }, true);
 
   // Sidebar links click event
@@ -82,6 +87,14 @@ function load() {
     // Fixed sidebar on desktop
     if (Nova.config.ntr.fixed_sidebar) {
       document.querySelector('body').classList.add("fixed-sidebar");
+    }
+
+    //Collapsible sidebar fpr desktop
+    if (Nova.config.ntr.desktop_collapsible_sidebar) {
+      document.querySelector('.hamburger-menu').style.display = "block";
+
+      var content = document.querySelector('.content');
+      content.classList.add("max-w-none");
     }
   }
 }

@@ -23,4 +23,6 @@ return [
     // If true, the sidebar will stay fixed on desktop view
     'fixed_sidebar' => false,
 
+    'desktop_collapsible_sidebar' => false,
+
 ];
