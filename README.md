@@ -1,5 +1,11 @@
-# Laravel Nova Responsive Theme
+# Deprecation notice
+New Nova 4 release is fully responsive (https://nova.laravel.com/docs/4.0/releases.html#responsive-design), so this package is no longer needed and it will not be updated anymore.
 
+Thanks to everybody for the support during this years and I hope the package was useful to many people.
+
+If you are using and old (<= 3) version of Nova, you still can use this package, but there will be no more releases or bug fixes.
+
+# Laravel Nova Responsive Theme
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gregoriohc/laravel-nova-theme-responsive.svg?style=flat-square)](https://packagist.org/packages/gregoriohc/laravel-nova-theme-responsive)
 [![Total Downloads](https://img.shields.io/packagist/dt/gregoriohc/laravel-nova-theme-responsive.svg?style=flat-square)](https://packagist.org/packages/gregoriohc/laravel-nova-theme-responsive)
 
